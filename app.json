@@ -1,15 +1,9 @@
 {
-    "name": "Chatbot Whatsapp (Leifer Mendez)",
-    "description": "El siguiente proyecto se realizó con fines educativos para el canal de Youtube (Leifer Mendez) donde aprendemos como usando node.js podemos crear un chatbot increíble que además le agregamos inteligencia artificial gracias al servicio de dialogflow",
-    "repository": "https://github.com/leifermendez/bot-whatsapp",
-    "logo": "https://avatars0.githubusercontent.com/u/15802366?s=460&u=77ec7ef359e8ed842aef769693f1675c0ed460fd&v=4",
-    "keywords": [
-      "nodejs",
-      "whatsapp",
-      "bot",
-      "chatbot",
-      "dialogflow"
-    ],
+    "name": "",
+    "description": "",
+    "repository": "",
+    "logo": "",
+    "keywords": [""],
     "addons": [
     ],
     "buildpacks": [
