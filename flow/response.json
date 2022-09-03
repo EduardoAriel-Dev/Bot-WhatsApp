@@ -37,7 +37,7 @@
     "STEP_2_0":{
         "replyMessage":[
             "Te ayudaré a encontrar un aula. \n",
-            "Inscribe el edificio y el número \n",
+            "Escribe el edificio y el número \n",
             "Ejemplo: *Savio 25*"
         ],
         "media":null,
