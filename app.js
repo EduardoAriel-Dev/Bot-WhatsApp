@@ -1,6 +1,3 @@
-/**
- * ⚡⚡⚡ DECLARAMOS LAS LIBRERIAS y CONSTANTES A USAR! ⚡⚡⚡
- */
 require('dotenv').config()
 const fs = require('fs');
 const express = require('express');
@@ -34,7 +31,6 @@ const listenMessage = () => client.on('message', async msg => {
         return
     }
 
-    // Este bug lo reporto Lucas Aldeco Brescia para evitar que se publiquen estados
     if (from === 'status@broadcast') {
         return
     }
