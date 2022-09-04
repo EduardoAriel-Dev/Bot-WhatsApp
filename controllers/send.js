@@ -60,7 +60,6 @@ const sendMessage = async (client, number = null, text = null, trigger = null) =
     const message = text
     client.sendMessage(number, message);
     await readChat(number, message, trigger)
-    console.log(`⚡⚡⚡ Enviando mensajes....`);
    },DELAY_TIME)
 }
 
@@ -73,8 +72,6 @@ const sendMessageButton = async (client, number = null, text = null, actionButto
     const { title = null, message = null, footer = null, buttons = [] } = actionButtons;
     let button = new Buttons(message,[...buttons], title, footer);
     client.sendMessage(number, button);
-
-    console.log(`⚡⚡⚡ Enviando mensajes....`);
 }
 
 
@@ -107,7 +104,7 @@ const lastTrigger = (number) => new Promise((resolve, reject) => {
 const readChat = async (number, message, trigger = null) => {
     number = cleanNumber(number)
     await saveMessage( message, trigger, number )
-    console.log('Saved')
+    console.log('Actualizado historial de conversación con el usuario...')
 }
 
 module.exports = { sendMessage, sendMedia, lastTrigger, sendMessageButton, readChat, sendMediaVoiceNote }

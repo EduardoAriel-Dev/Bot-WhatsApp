@@ -26,7 +26,7 @@ const saveExternalFile = (url) => new Promise((resolve, reject) => {
             resolve(name)
         });
         file.on('error', function() {
-            console.log('errro')
+            console.log('error')
             file.close();  // close() is async, call cb after close completes.
             resolve(null)
         });
@@ -46,8 +46,7 @@ const checkIsUrl = (path) => {
 const generateImage = (base64, cb = () => {}) => {
     let qr_svg = qr.image(base64, { type: 'svg', margin: 4 });
     qr_svg.pipe(require('fs').createWriteStream('./mediaSend/qr-code.svg'));
-    console.log(`⚡ Recuerda que el QR se actualiza cada minuto ⚡'`);
-    console.log(`⚡ Actualiza F5 el navegador para mantener el mejor QR⚡`);
+    console.log(``);
     cb()
 }
 
@@ -55,7 +54,7 @@ const checkEnvFile = () => {
     const pathEnv = `${__dirname}/../.env`;
     const isExist = fs.existsSync(pathEnv);
     if(!isExist){
-        console.log(`🆗 ATENCION! 🆗 te falta crear tu archivo .env de lo contrario no funcionara`)
+        console.log(``)
     }
 }
 
