@@ -1,0 +1,27 @@
+2022/09/06-19:27:35.370 ae4 Reusing MANIFEST C:\Users\Leandro\Documents\Chatbot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/09/06-19:27:35.371 ae4 Recovering log #1168
+2022/09/06-19:27:36.197 ae4 Reusing old log C:\Users\Leandro\Documents\Chatbot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001168.log 
+2022/09/06-19:27:51.650 bd8 Level-0 table #1180: started
+2022/09/06-19:27:51.837 bd8 Level-0 table #1180: 1137315 bytes OK
+2022/09/06-19:27:51.988 bd8 Delete type=0 #1168
+2022/09/06-19:27:52.720 2480 Compacting 1@1 + 8@2 files
+2022/09/06-19:27:53.348 2480 Generated table #1181@1: 38460 keys, 2251690 bytes
+2022/09/06-19:27:53.909 2480 Generated table #1182@1: 2597 keys, 2159954 bytes
+2022/09/06-19:27:54.846 2480 Generated table #1183@1: 1494 keys, 2137243 bytes
+2022/09/06-19:27:55.813 2480 Generated table #1184@1: 16445 keys, 2211041 bytes
+2022/09/06-19:27:56.448 2480 Generated table #1185@1: 13932 keys, 2175057 bytes
+2022/09/06-19:27:57.050 2480 Generated table #1186@1: 41086 keys, 2169925 bytes
+2022/09/06-19:27:58.523 2480 Generated table #1187@1: 114155 keys, 2268810 bytes
+2022/09/06-19:27:59.836 2480 Generated table #1188@1: 113950 keys, 2270134 bytes
+2022/09/06-19:28:00.117 2480 Generated table #1189@1: 12205 keys, 245700 bytes
+2022/09/06-19:28:00.117 2480 Compacted 1@1 + 8@2 files => 17889554 bytes
+2022/09/06-19:28:00.325 2480 compacted to: files[ 0 0 9 0 0 0 0 ]
+2022/09/06-19:28:00.325 2480 Delete type=2 #1170
+2022/09/06-19:28:00.326 2480 Delete type=2 #1171
+2022/09/06-19:28:00.326 2480 Delete type=2 #1172
+2022/09/06-19:28:00.326 2480 Delete type=2 #1173
+2022/09/06-19:28:00.326 2480 Delete type=2 #1174
+2022/09/06-19:28:00.326 2480 Delete type=2 #1175
+2022/09/06-19:28:00.326 2480 Delete type=2 #1176
+2022/09/06-19:28:00.326 2480 Delete type=2 #1177
+2022/09/06-19:28:00.326 2480 Delete type=2 #1180
