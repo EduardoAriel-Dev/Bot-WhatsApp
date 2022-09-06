@@ -4,32 +4,25 @@ const { getDataIa } = require('./diaglogflow')
 const  stepsInitial = require('../flow/initial.json')
 const  stepsReponse = require('../flow/response.json')
 
+//Revisa que se envió un mensaje
 const get = (message) => new Promise((resolve, reject) => {
-    /**
-     * Si no estas usando un gesto de base de datos
-     */
-
+    //Default, sin base de datos
     if (process.env.DATABASE === 'none') {
         const { key } = stepsInitial.find(k => k.keywords.includes(message)) || { key: null }
         const response = key || null
         resolve(response)
     }
-    /**
-     * Si usas MYSQL
-     */
+    //ConMySQL
     if (process.env.DATABASE === 'mysql') {
         getData(message, (dt) => {
             resolve(dt)
         });
     }
-
 })
 
 
 const reply = (step) => new Promise((resolve, reject) => {
-    /**
-    * Si no estas usando un gesto de base de datos
-    */
+    //Default, sin base de datos
     if (process.env.DATABASE === 'none') {
         let resData = { replyMessage: '', media: null, trigger: null }
         const responseFind = stepsReponse[step] || {};
@@ -40,9 +33,7 @@ const reply = (step) => new Promise((resolve, reject) => {
         resolve(resData);
         return 
     }
-    /**
-     * Si usas MYSQL
-     */
+    //Con MySQL
     if (process.env.DATABASE === 'mysql') {
         let resData = { replyMessage: '', media: null, trigger: null }
         getReply(step, (dt) => {
@@ -53,9 +44,7 @@ const reply = (step) => new Promise((resolve, reject) => {
 })
 
 const getIA = (message) => new Promise((resolve, reject) => {
-    /**
-     * Si usas dialogflow
-     */
+    //Dialogflow
      if (process.env.DATABASE === 'dialogflow') {
         let resData = { replyMessage: '', media: null, trigger: null }
         getDataIa(message,(dt) => {

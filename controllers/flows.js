@@ -1,11 +1,13 @@
 const {get, reply, getIA} = require('../adapter')
 const {saveExternalFile, checkIsUrl} = require('./handle')
 
+//*Recibe los mensajes
 const getMessages = async (message) => {
     const data = await get(message)
     return data
 }
 
+//*Responde los mensajes
 const responseMessages = async (step) => {
     const data = await reply(step)
     if(data && data.media){

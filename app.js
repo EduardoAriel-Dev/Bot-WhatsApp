@@ -10,7 +10,8 @@ const { generateImage, cleanNumber, checkEnvFile, createClient, isValidNumber } 
 const { connectionReady, connectionLost } = require('./controllers/connection')
 const { saveMedia } = require('./controllers/save')
 const { getMessages, responseMessages, bothResponse } = require('./controllers/flows')
-const { sendMedia, sendMessage, lastTrigger, sendMessageButton, readChat } = require('./controllers/send')
+const { sendMedia, sendMessage, lastTrigger, sendMessageButton, readChat } = require('./controllers/send');
+const { response } = require('express');
 const app = express();
 app.use(cors())
 app.use(express.json())
@@ -21,27 +22,22 @@ const port = process.env.PORT || 3000
 var client;
 app.use('/', require('./routes/web'))
 
-/**
- * Escuchamos cuando entre un mensaje
- */
+//Escuchador de mensajes
 const listenMessage = () => client.on('message', async msg => {
     const { from, body, hasMedia } = msg;
 
     if(!isValidNumber(from)){
         return
     }
-
     if (from === 'status@broadcast') {
         return
     }
     message = body.toLowerCase();
-    console.log('BODY',message)
+    console.log('Mensaje Recibido: -> ',message)
     const number = cleanNumber(from)
     await readChat(number, message)
 
-    /**
-     * Guardamos el archivo multimedia que envia
-     */
+    //Guardamos archivo multimedia que envia
     if (process.env.SAVE_MEDIA && hasMedia) {
         const media = await msg.downloadMedia();
         saveMedia(media);
@@ -73,18 +69,11 @@ const listenMessage = () => client.on('message', async msg => {
         await sendMessage(client, from, response.replyMessage);
     }
 
-    /**
-     * Respondemos al primero paso si encuentra palabras clave
-     */
+    //*Responder con palabras claves
     const step = await getMessages(message);
 
     if (step) {
         const response = await responseMessages(step);
-
-        /**
-         * Si quieres enviar botones
-         */
-
         await sendMessage(client, from, response.replyMessage, response.trigger);
 
         if(response.hasOwnProperty('actions')){
@@ -103,15 +92,20 @@ const listenMessage = () => client.on('message', async msg => {
         }
         return
     }
+    //ejemplo de flujo de mensaje
+    if (body == 'a') {
+    //     //const response = await responseMessages(step);
+    //     //response.replyMessage = ["probando flujo de mensaje!"];
+
+    //     //await sendMessage(client, from, response.replyMessage, response.trigger);
+        sendMessage(from, 'hola..!' );
+    }
 
     //Si quieres tener un mensaje por defecto
     if (process.env.DEFAULT_MESSAGE === 'true') {
         const response = await responseMessages('DEFAULT')
         await sendMessage(client, from, response.replyMessage, response.trigger);
-
-        /**
-         * Si quieres enviar botones
-         */
+      
         if(response.hasOwnProperty('actions')){
             const { actions } = response;
             await sendMessageButton(client, from, null, actions);
@@ -121,7 +115,7 @@ const listenMessage = () => client.on('message', async msg => {
 });
 
 
-
+//*Creación de nuevo Cliente
 client = new Client({
         authStrategy: new LocalAuth(),
         puppeteer: { headless: true }
@@ -130,7 +124,7 @@ client = new Client({
 client.on('qr', qr => generateImage(qr, () => {
         qrcode.generate(qr, { small: true });
         
-        console.log(`Ver QR http://localhost:${port}/qr`)
+        console.log(`Ver QR generado -> http://localhost:${port}/qr`)
         socketEvents.sendQR(qr)
 }))
 
@@ -141,22 +135,19 @@ client.on('ready', (a) => {
 });
 
 client.on('auth_failure', (e) => {
-        // console.log(e)
-        // connectionLost()
+    //Fallo al identificar nuevo usuario
 });
 
 client.on('authenticated', () => {
-        console.log('AUTHENTICATED'); 
+        console.log('*El usuario fue AUTENTICADO!');
+        console.log("El chatBOT UNAJ debería ya estar funcionando...") 
 });
 
     client.initialize();
 
 
 
-/**
- * Verificamos si tienes un gesto de db
- */
-
+//Verificacion conexion con base de datos
 if (process.env.DATABASE === 'mysql') {
     mysqlConnection.connect()
 }
