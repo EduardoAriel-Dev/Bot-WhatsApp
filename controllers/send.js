@@ -104,7 +104,7 @@ const lastTrigger = (number) => new Promise((resolve, reject) => {
 const readChat = async (number, message, trigger = null) => {
     number = cleanNumber(number)
     await saveMessage( message, trigger, number )
-    console.log('Actualizado historial de conversación con el usuario...')
+    //console.log('Actualizado historial de conversación con el usuario...')
 }
 
 module.exports = { sendMessage, sendMedia, lastTrigger, sendMessageButton, readChat, sendMediaVoiceNote }

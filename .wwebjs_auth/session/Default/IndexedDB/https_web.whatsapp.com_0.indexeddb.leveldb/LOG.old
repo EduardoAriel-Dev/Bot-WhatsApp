@@ -1,3 +1,72 @@
-2022/09/06-19:25:46.523 2ab4 Reusing MANIFEST C:\Users\Leandro\Documents\Chatbot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/09/06-19:25:46.524 2ab4 Recovering log #1168
-2022/09/06-19:25:47.063 2ab4 Reusing old log C:\Users\Leandro\Documents\Chatbot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001168.log 
+2022/09/06-22:03:41.017 3364 Reusing MANIFEST C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/09/06-22:03:41.017 3364 Recovering log #767
+2022/09/06-22:03:41.169 3364 Reusing old log C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000767.log 
+2022/09/06-22:03:55.208 37b8 Level-0 table #794: started
+2022/09/06-22:03:55.398 37b8 Level-0 table #794: 1225663 bytes OK
+2022/09/06-22:03:55.438 37b8 Delete type=0 #767
+2022/09/06-22:03:57.899 3458 Compacting 1@0 + 0@1 files
+2022/09/06-22:03:58.102 3458 Generated table #795@0: 16238 keys, 548472 bytes
+2022/09/06-22:03:58.149 3458 Generated table #796@0: 977 keys, 45642 bytes
+2022/09/06-22:03:58.194 3458 Generated table #797@0: 64 keys, 1732 bytes
+2022/09/06-22:03:58.194 3458 Compacted 1@0 + 0@1 files => 595846 bytes
+2022/09/06-22:03:58.236 3458 compacted to: files[ 0 3 31 0 0 0 0 ]
+2022/09/06-22:03:58.852 3458 Compacting 1@1 + 10@2 files
+2022/09/06-22:03:59.222 3458 Generated table #798@1: 39147 keys, 2287298 bytes
+2022/09/06-22:03:59.555 3458 Generated table #799@1: 8218 keys, 2180161 bytes
+2022/09/06-22:03:59.901 3458 Generated table #800@1: 3141 keys, 2165357 bytes
+2022/09/06-22:04:00.175 3458 Generated table #801@1: 1998 keys, 2160558 bytes
+2022/09/06-22:04:00.374 3458 Generated table #802@1: 2077 keys, 2147413 bytes
+2022/09/06-22:04:00.558 3458 Generated table #803@1: 1348 keys, 2130848 bytes
+2022/09/06-22:04:00.693 3458 Generated table #804@1: 1206 keys, 2126864 bytes
+2022/09/06-22:04:00.937 3458 Generated table #805@1: 1225 keys, 2127793 bytes
+2022/09/06-22:04:01.188 3458 Generated table #806@1: 18558 keys, 2182436 bytes
+2022/09/06-22:04:01.463 3458 Generated table #807@1: 25744 keys, 2280789 bytes
+2022/09/06-22:04:01.543 3458 Generated table #808@1: 1485 keys, 143218 bytes
+2022/09/06-22:04:01.543 3458 Compacted 1@1 + 10@2 files => 21932735 bytes
+2022/09/06-22:04:01.566 3458 compacted to: files[ 0 2 32 0 0 0 0 ]
+2022/09/06-22:04:01.568 3458 Delete type=2 #771
+2022/09/06-22:04:01.568 3458 Delete type=2 #772
+2022/09/06-22:04:01.568 3458 Delete type=2 #773
+2022/09/06-22:04:01.568 3458 Delete type=2 #774
+2022/09/06-22:04:01.568 3458 Delete type=2 #775
+2022/09/06-22:04:01.569 3458 Delete type=2 #776
+2022/09/06-22:04:01.569 3458 Delete type=2 #777
+2022/09/06-22:04:01.569 3458 Delete type=2 #778
+2022/09/06-22:04:01.569 3458 Delete type=2 #779
+2022/09/06-22:04:01.569 3458 Delete type=2 #780
+2022/09/06-22:04:01.569 3458 Delete type=2 #794
+2022/09/06-22:04:01.569 3458 Delete type=2 #795
+2022/09/06-22:04:07.412 2fa4 Compacting 1@1 + 20@2 files
+2022/09/06-22:04:08.120 2fa4 Generated table #809@1: 27477 keys, 2271882 bytes
+2022/09/06-22:04:08.281 2fa4 Generated table #810@1: 3473 keys, 2117894 bytes
+2022/09/06-22:04:08.486 2fa4 Generated table #811@1: 7839 keys, 2133904 bytes
+2022/09/06-22:04:08.746 2fa4 Generated table #812@1: 1938 keys, 2113965 bytes
+2022/09/06-22:04:09.023 2fa4 Generated table #813@1: 82459 keys, 2226924 bytes
+2022/09/06-22:04:09.331 2fa4 Generated table #814@1: 108029 keys, 2261908 bytes
+2022/09/06-22:04:09.689 2fa4 Generated table #815@1: 108691 keys, 2262350 bytes
+2022/09/06-22:04:10.023 2fa4 Generated table #816@1: 108836 keys, 2261908 bytes
+2022/09/06-22:04:10.325 2fa4 Generated table #817@1: 107824 keys, 2261688 bytes
+2022/09/06-22:04:10.525 2fa4 Generated table #818@1: 85627 keys, 1789878 bytes
+2022/09/06-22:04:10.525 2fa4 Compacted 1@1 + 20@2 files => 21702301 bytes
+2022/09/06-22:04:10.553 2fa4 compacted to: files[ 0 1 22 0 0 0 0 ]
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #180
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #197
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #214
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #329
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #361
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #382
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #413
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #458
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #486
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #513
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #781
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #782
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #783
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #784
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #785
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #786
+2022/09/06-22:04:10.554 2fa4 Delete type=2 #787
+2022/09/06-22:04:10.555 2fa4 Delete type=2 #788
+2022/09/06-22:04:10.555 2fa4 Delete type=2 #789
+2022/09/06-22:04:10.555 2fa4 Delete type=2 #790
+2022/09/06-22:04:10.555 2fa4 Delete type=2 #796

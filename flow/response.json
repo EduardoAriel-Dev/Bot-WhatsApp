@@ -17,22 +17,15 @@
     "STEP_1":{
         "replyMessage":[
             "¡Hola! Este es el chatBot de la UNAJ \n",
-            "Puedes acceder a las diferentes secciones escribiendo la *palabra clave*. \n"       
+            "Puedes acceder a las diferentes secciones escribiendo la *palabra clave*. \n\n",
+            "Aulas -> *aula* \n",
+            "Próximos Feriados -> *feriados* \n",
+            "Horario de Materias -> *materias* \n",
+            "Email de Profesor/Instituto -> *email* \n",
+            "Fecha Inscripción/Finales -> *fechas* \n"       
         ],
         "media":null,
-        "trigger":null,
-        "actions":{
-            "title":"¿Que te gustaría buscar? ",
-            "message":"",
-            "footer":"",
-            "buttons":[
-                {"body":"Aula -> *aula*"},
-                {"body":"Próximos Feriados -> *feriados*"},
-                {"body":"Horario de Materias -> *materias*"},
-                {"body":"Email de Profesor/Instituto -> *email*"},
-                {"body":"Fecha Inscripción/Final -> *fechas*"}
-            ]
-        }
+        "trigger":null
     },
     "STEP_2_0":{
         "replyMessage":[
@@ -49,8 +42,8 @@
             "*7 de Octubre* (Viernes) \n",
             "*10 de Octubre* (Lunes) \n",
             "*21 de Noviembre* (Lunes) \n",
-            "*8 de Diciembre (Jueves) \n",
-            "*9 de Diciembre (Viernes) \n"
+            "*8 de Diciembre* (Jueves) \n",
+            "*9 de Diciembre* (Viernes) \n"
         ],
         "media":null,
         "trigger":null

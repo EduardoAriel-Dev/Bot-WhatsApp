@@ -12,6 +12,7 @@ const { saveMedia } = require('./controllers/save')
 const { getMessages, responseMessages, bothResponse } = require('./controllers/flows')
 const { sendMedia, sendMessage, lastTrigger, sendMessageButton, readChat } = require('./controllers/send');
 const { response } = require('express');
+const { Console } = require('console');
 const app = express();
 app.use(cors())
 app.use(express.json())
@@ -92,13 +93,18 @@ const listenMessage = () => client.on('message', async msg => {
         }
         return
     }
-    //ejemplo de flujo de mensaje
-    if (body == 'a') {
-    //     //const response = await responseMessages(step);
-    //     //response.replyMessage = ["probando flujo de mensaje!"];
 
-    //     //await sendMessage(client, from, response.replyMessage, response.trigger);
-        sendMessage(from, 'hola..!' );
+    //ejemplo de flujo de mensaje
+    const aulasSavio = ['savio20', 'savio21', 'savio22', 'savio23', 'savio24', 'savio25', 'savio26', 'savio27' ];
+    var aux = message.replace(/\s/g, '')
+    
+    if (aux.includes('savio')) {
+        if (aulasSavio.includes(aux)) {
+            await sendMessage(client, from, "Esa aula en el edificio Savio existe")
+        }
+        else {
+            await sendMessage(client, from, "Esa aula en el edificio Savio NO existe")
+        }
     }
 
     //Si quieres tener un mensaje por defecto
@@ -140,7 +146,7 @@ client.on('auth_failure', (e) => {
 
 client.on('authenticated', () => {
         console.log('*El usuario fue AUTENTICADO!');
-        console.log("El chatBOT UNAJ debería ya estar funcionando...") 
+        console.log("- El chatBOT UNAJ debería ya estar funcionando...") 
 });
 
     client.initialize();
