@@ -186,4 +186,6 @@ class Node {
   graph.addEdge("Manzi", "Pistarini", 5);
   
   //De donde estoy, a donde quiero ir...
-  console.log(graph.Dijkstra("Entrada Calchaqui", "Ugarte P1"));
+  // graph.Dijkstra("Entrada Calchaqui", "Ugarte P1");
+
+  module.exports = { graph };
