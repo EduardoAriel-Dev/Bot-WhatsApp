@@ -1,3 +1,2 @@
-2022/09/08-21:06:54.309 24e8 Reusing MANIFEST C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\Service Worker\Database/MANIFEST-000001
-2022/09/08-21:06:54.337 24e8 Recovering log #3
-2022/09/08-21:06:54.408 24e8 Reusing old log C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\Service Worker\Database/000003.log 
+2022/09/17-13:56:02.374 48b8 Creating DB C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\Service Worker\Database since it was missing.
+2022/09/17-13:56:02.515 48b8 Reusing MANIFEST C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\Service Worker\Database/MANIFEST-000001

@@ -1,3 +1,2 @@
-2022/09/08-21:06:54.432 1784 Reusing MANIFEST C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-2022/09/08-21:06:54.442 1784 Recovering log #3
-2022/09/08-21:06:54.449 1784 Reusing old log C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/000003.log 
+2022/09/17-13:55:56.576 48b8 Creating DB C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb since it was missing.
+2022/09/17-13:55:56.784 48b8 Reusing MANIFEST C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
