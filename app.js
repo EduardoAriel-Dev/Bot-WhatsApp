@@ -13,6 +13,12 @@ const { getMessages, responseMessages, bothResponse } = require('./controllers/f
 const { sendMedia, sendMessage, lastTrigger, sendMessageButton, readChat } = require('./controllers/send');
 const { response } = require('express');
 const { Console } = require('console');
+
+//Datos
+const { graph } = require('./paths/Dijkstra.js');
+const { aulasSavioPB, aulasSavioP1 } = require ('./paths/aulas.js');
+//=====
+
 const app = express();
 app.use(cors())
 app.use(express.json())
@@ -95,15 +101,22 @@ const listenMessage = () => client.on('message', async msg => {
     }
 
     //ejemplo de flujo de mensaje
-    const aulasSavio = ['savio20', 'savio21', 'savio22', 'savio23', 'savio24', 'savio25', 'savio26', 'savio27' ];
     var aux = message.replace(/\s/g, '')
     
     if (aux.includes('savio')) {
-        if (aulasSavio.includes(aux)) {
-            await sendMessage(client, from, "Esa aula en el edificio Savio existe")
+        if (aulasSavioPB.includes(aux)) {
+            let camino = graph.Dijkstra("Entrada Calchaqui", "Savio PB")
+            console.log(camino)
+            await sendMessage(client, from, camino.toString())
+            //await sendMessage(client, from, "Esa aula en el edificio Savio existe")
         }
-        else {
-            await sendMessage(client, from, "Esa aula en el edificio Savio NO existe")
+        // else {
+        //     await sendMessage(client, from, "Esa aula en el edificio Savio NO existe")
+        // }
+        if (aulasSavioP1.includes(aux)) {
+            let camino = graph.Dijkstra("Entrada Calchaqui", "Savio P1")
+            console.log(camino)
+            await sendMessage(client, from, camino.toString())
         }
     }
 
