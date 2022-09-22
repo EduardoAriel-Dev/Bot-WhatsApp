@@ -145,7 +145,8 @@ class Node {
   graph.addVertex("Mosconi P4");
   graph.addVertex("Savio PB");
   graph.addVertex("Savio P1");
-  graph.addVertex("Pistarini");
+  graph.addVertex("Pistarini PB");
+  graph.addVertex("Pistarini P1");
   graph.addVertex("Silvio Dessy");
   graph.addVertex("Abrales");
   graph.addVertex("Hudson");
@@ -153,10 +154,12 @@ class Node {
   graph.addVertex("Ugarte PB");
   graph.addVertex("Ugarte P1");
   graph.addVertex("Manzi");
+  graph.addVertex("LCV")
   
   //Conexiones (partida, destino, longitud camino)
   graph.addEdge("Entrada Calchaqui", "Mosconi PB", 2);
   graph.addEdge("Entrada Calchaqui", "Silvio Dessy", 10);
+  graph.addEdge("Entrada Calchaqui", "LCV", 8)
   
   graph.addEdge("Mosconi PB", "Mosconi P1", 2);
   graph.addEdge("Mosconi P1", "Mosconi P2", 2);
@@ -168,22 +171,24 @@ class Node {
   
   graph.addEdge("Savio PB", "Savio P1", 2);
   graph.addEdge("Savio PB", "Abrales", 5);
-  graph.addEdge("Savio PB", "Pistarini", 5)
+  graph.addEdge("Savio PB", "Pistarini PB", 5)
   
   graph.addEdge("Abrales", "Silvio Dessy", 10);
   graph.addEdge("Abrales", "Hudson", 2);
   
   graph.addEdge("Hudson", "Lanteri", 5);
-  graph.addEdge("Hudson", "Pistarini", 4);
+  graph.addEdge("Hudson", "Pistarini PB", 4);
+
+  graph.addEdge("Pistarini PB", "Pistarini P1", 2);
   
   graph.addEdge("Lanteri", "Ugarte PB", 5);
   
   graph.addEdge("Ugarte PB", "Manzi", 3);
   graph.addEdge("Ugarte PB", "Ugarte P1", 2);
   graph.addEdge("Ugarte PB", "Ugarte P1", 2);
-  graph.addEdge("Ugarte PB", "Pistarini", 4);
+  graph.addEdge("Ugarte PB", "Pistarini PB", 4);
   
-  graph.addEdge("Manzi", "Pistarini", 5);
+  graph.addEdge("Manzi", "Pistarini PB", 5);
   
   //De donde estoy, a donde quiero ir...
   // graph.Dijkstra("Entrada Calchaqui", "Ugarte P1");
