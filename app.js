@@ -103,22 +103,22 @@ const listenMessage = () => client.on('message', async msg => {
     //ejemplo de flujo de mensaje
     var aux = message.replace(/\s/g, '')
     
-    if (aux.includes('savio')) {
-        if (aulasSavioPB.includes(aux)) {
-            let camino = graph.Dijkstra("Entrada Calchaqui", "Savio PB")
-            console.log(camino)
-            await sendMessage(client, from, camino.toString())
-            //await sendMessage(client, from, "Esa aula en el edificio Savio existe")
-        }
-        // else {
-        //     await sendMessage(client, from, "Esa aula en el edificio Savio NO existe")
-        // }
-        if (aulasSavioP1.includes(aux)) {
-            let camino = graph.Dijkstra("Entrada Calchaqui", "Savio P1")
-            console.log(camino)
-            await sendMessage(client, from, camino.toString())
-        }
-    }
+    // if (aux.includes('savio')) {
+    //     if (aulasSavioPB.includes(aux)) {
+    //         let camino = graph.Dijkstra("Entrada Calchaqui", "Savio PB")
+    //         console.log(camino)
+    //         await sendMessage(client, from, camino.toString())
+    //         //await sendMessage(client, from, "Esa aula en el edificio Savio existe")
+    //     }
+    //     // else {
+    //     //     await sendMessage(client, from, "Esa aula en el edificio Savio NO existe")
+    //     // }
+    //     if (aulasSavioP1.includes(aux)) {
+    //         let camino = graph.Dijkstra("Entrada Calchaqui", "Savio P1")
+    //         console.log(camino)
+    //         await sendMessage(client, from, camino.toString())
+    //     }
+    // }
 
     //Si quieres tener un mensaje por defecto
     if (process.env.DEFAULT_MESSAGE === 'true') {

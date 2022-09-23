@@ -1,59 +1,39 @@
-2022/09/20-09:08:09.657 4070 Reusing MANIFEST C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/09/20-09:08:09.658 4070 Recovering log #704
-2022/09/20-09:08:09.962 4070 Reusing old log C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000704.log 
-2022/09/20-09:08:22.990 4070 Level-0 table #729: started
-2022/09/20-09:08:23.222 4070 Level-0 table #729: 1115210 bytes OK
-2022/09/20-09:08:23.246 4070 Delete type=0 #704
-2022/09/20-09:08:23.676 4070 Compacting 1@0 + 0@1 files
-2022/09/20-09:08:23.822 4070 Generated table #730@0: 23762 keys, 553228 bytes
-2022/09/20-09:08:23.846 4070 Generated table #731@0: 609 keys, 29576 bytes
-2022/09/20-09:08:23.847 4070 Compacted 1@0 + 0@1 files => 582804 bytes
-2022/09/20-09:08:23.873 4070 compacted to: files[ 0 2 20 0 0 0 0 ]
-2022/09/20-09:08:23.873 4070 Delete type=2 #729
-2022/09/20-09:08:24.196 42dc Compacting 1@1 + 10@2 files
-2022/09/20-09:08:24.509 42dc Generated table #732@1: 38296 keys, 2264939 bytes
-2022/09/20-09:08:24.825 42dc Generated table #733@1: 8488 keys, 2179738 bytes
-2022/09/20-09:08:25.126 42dc Generated table #734@1: 3165 keys, 2166462 bytes
-2022/09/20-09:08:25.306 42dc Generated table #735@1: 1811 keys, 2140156 bytes
-2022/09/20-09:08:25.447 42dc Generated table #736@1: 2209 keys, 2151644 bytes
-2022/09/20-09:08:25.564 42dc Generated table #737@1: 1220 keys, 2127137 bytes
-2022/09/20-09:08:25.762 42dc Generated table #738@1: 1252 keys, 2131588 bytes
-2022/09/20-09:08:26.061 42dc Generated table #739@1: 8492 keys, 2153265 bytes
-2022/09/20-09:08:26.427 42dc Generated table #740@1: 29074 keys, 2272173 bytes
-2022/09/20-09:08:26.657 42dc Generated table #741@1: 24636 keys, 2114111 bytes
-2022/09/20-09:08:26.657 42dc Compacted 1@1 + 10@2 files => 21701213 bytes
-2022/09/20-09:08:26.697 42dc compacted to: files[ 0 1 20 0 0 0 0 ]
-2022/09/20-09:08:29.359 4070 Compacting 1@1 + 10@2 files
-2022/09/20-09:08:29.677 4070 Generated table #742@1: 11281 keys, 2165226 bytes
-2022/09/20-09:08:29.887 4070 Generated table #743@1: 3723 keys, 2120720 bytes
-2022/09/20-09:08:30.141 4070 Generated table #744@1: 13919 keys, 2134124 bytes
-2022/09/20-09:08:30.502 4070 Generated table #745@1: 111588 keys, 2264566 bytes
-2022/09/20-09:08:30.823 4070 Generated table #746@1: 108934 keys, 2262863 bytes
-2022/09/20-09:08:31.158 4070 Generated table #747@1: 108448 keys, 2261710 bytes
-2022/09/20-09:08:31.540 4070 Generated table #748@1: 108213 keys, 2262238 bytes
-2022/09/20-09:08:32.019 4070 Generated table #749@1: 109144 keys, 2263217 bytes
-2022/09/20-09:08:32.068 4070 Generated table #750@1: 1009 keys, 22583 bytes
-2022/09/20-09:08:32.068 4070 Compacted 1@1 + 10@2 files => 17757247 bytes
-2022/09/20-09:08:32.108 4070 compacted to: files[ 0 0 19 0 0 0 0 ]
-2022/09/20-09:08:32.111 4070 Delete type=2 #665
-2022/09/20-09:08:32.111 4070 Delete type=2 #708
-2022/09/20-09:08:32.111 4070 Delete type=2 #709
-2022/09/20-09:08:32.111 4070 Delete type=2 #710
-2022/09/20-09:08:32.111 4070 Delete type=2 #711
-2022/09/20-09:08:32.111 4070 Delete type=2 #712
-2022/09/20-09:08:32.111 4070 Delete type=2 #713
-2022/09/20-09:08:32.111 4070 Delete type=2 #714
-2022/09/20-09:08:32.111 4070 Delete type=2 #715
-2022/09/20-09:08:32.111 4070 Delete type=2 #716
-2022/09/20-09:08:32.111 4070 Delete type=2 #717
-2022/09/20-09:08:32.111 4070 Delete type=2 #718
-2022/09/20-09:08:32.112 4070 Delete type=2 #719
-2022/09/20-09:08:32.112 4070 Delete type=2 #720
-2022/09/20-09:08:32.112 4070 Delete type=2 #721
-2022/09/20-09:08:32.112 4070 Delete type=2 #722
-2022/09/20-09:08:32.112 4070 Delete type=2 #723
-2022/09/20-09:08:32.112 4070 Delete type=2 #724
-2022/09/20-09:08:32.113 4070 Delete type=2 #725
-2022/09/20-09:08:32.113 4070 Delete type=2 #726
-2022/09/20-09:08:32.113 4070 Delete type=2 #730
-2022/09/20-09:08:32.113 4070 Delete type=2 #731
+2022/09/23-18:37:29.962 4558 Reusing MANIFEST C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/09/23-18:37:29.963 4558 Recovering log #1538
+2022/09/23-18:37:29.981 4558 Reusing old log C:\Users\Leandro\Documents\ChatBot\bot-whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/001538.log 
+2022/09/23-18:37:49.351 1af8 Level-0 table #1566: started
+2022/09/23-18:37:49.571 1af8 Level-0 table #1566: 1127644 bytes OK
+2022/09/23-18:37:49.595 1af8 Delete type=0 #1538
+2022/09/23-18:37:50.526 1f94 Compacting 1@0 + 1@1 files
+2022/09/23-18:37:50.654 1f94 Generated table #1567@0: 13980 keys, 792265 bytes
+2022/09/23-18:37:50.687 1f94 Generated table #1568@0: 268 keys, 11214 bytes
+2022/09/23-18:37:50.701 1f94 Generated table #1569@0: 88 keys, 3812 bytes
+2022/09/23-18:37:50.701 1f94 Compacted 1@0 + 1@1 files => 807291 bytes
+2022/09/23-18:37:50.720 1f94 compacted to: files[ 0 3 23 0 0 0 0 ]
+2022/09/23-18:37:50.721 1f94 Delete type=2 #1542
+2022/09/23-18:37:50.721 1f94 Delete type=2 #1566
+2022/09/23-18:37:50.875 4c9c Compacting 1@1 + 10@2 files
+2022/09/23-18:37:51.331 4c9c Generated table #1570@1: 29048 keys, 2243670 bytes
+2022/09/23-18:37:51.787 4c9c Generated table #1571@1: 29686 keys, 2283845 bytes
+2022/09/23-18:37:52.258 4c9c Generated table #1572@1: 44014 keys, 2234344 bytes
+2022/09/23-18:37:52.723 4c9c Generated table #1573@1: 3547 keys, 2168265 bytes
+2022/09/23-18:37:53.172 4c9c Generated table #1574@1: 2518 keys, 2157676 bytes
+2022/09/23-18:37:53.411 4c9c Generated table #1575@1: 1853 keys, 2139925 bytes
+2022/09/23-18:37:53.799 4c9c Generated table #1576@1: 1975 keys, 2158633 bytes
+2022/09/23-18:37:54.147 4c9c Generated table #1577@1: 1229 keys, 2127803 bytes
+2022/09/23-18:37:54.473 4c9c Generated table #1578@1: 1198 keys, 2131233 bytes
+2022/09/23-18:37:54.913 4c9c Generated table #1579@1: 20274 keys, 2197425 bytes
+2022/09/23-18:37:55.006 4c9c Generated table #1580@1: 3767 keys, 353674 bytes
+2022/09/23-18:37:55.006 4c9c Compacted 1@1 + 10@2 files => 22196493 bytes
+2022/09/23-18:37:55.060 4c9c compacted to: files[ 0 2 24 0 0 0 0 ]
+2022/09/23-18:37:55.060 4c9c Delete type=2 #1543
+2022/09/23-18:37:55.060 4c9c Delete type=2 #1544
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1545
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1546
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1547
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1548
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1549
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1550
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1551
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1552
+2022/09/23-18:37:55.061 4c9c Delete type=2 #1567
