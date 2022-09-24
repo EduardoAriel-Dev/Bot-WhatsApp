@@ -20,8 +20,8 @@
             "Puedes acceder a las diferentes secciones de ayuda escribiendo la *palabra clave*. \n\n",
             "Aulas -> *aula* \n",
             "Próximos Feriados -> *feriados* \n",
-            "Horario de Materias -> *materias* \n",
-            "Fecha Inscripción/Finales -> *fechas* \n"       
+            "Horarios de Materias -> *materias* \n",
+            "Fecha Inscripción a Materias/Finales -> *fechas* \n"       
         ],
         "media":null,
         "trigger":null
