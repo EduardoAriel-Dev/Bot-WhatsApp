@@ -20,8 +20,10 @@
             "Puedes acceder a las diferentes secciones de ayuda escribiendo la *palabra clave*. \n\n",
             "Aulas -> *aula* \n",
             "Próximos Feriados -> *feriados* \n",
+            "Horario de Materias -> *materias* \n",
+            "Fecha Inscripción/Finales -> *fechas* \n",     
             "Horarios de Materias -> *materias* \n",
-            "Fecha Inscripción a Materias/Finales -> *fechas* \n"       
+            "Fecha Inscripción a Materias/Finales -> *fechas* \n"
         ],
         "media":null,
         "trigger":null
@@ -42,7 +44,8 @@
             "*10 de Octubre* (Lunes) \n",
             "*21 de Noviembre* (Lunes) \n",
             "*8 de Diciembre* (Jueves) \n",
-            "*9 de Diciembre* (Viernes) \n"
+            "*9 de Diciembre* (Viernes) \n",
+            "Para volver al inicio -> *Inicio\n" 
         ],
         "media":null,
         "trigger":null
@@ -50,6 +53,7 @@
     "STEP_2_2":{
         "replyMessage":[
             "Necesito saber si eres ingresante o avanzado, también tu carrera. \n",
+            "Para volver al inicio -> *Inicio\n",
             "Escribe por ejemplo: *Avanzado Informatica*  \n"
         ],
         "media":null,
@@ -60,7 +64,8 @@
             "Estas son las fechas más importantes, accede escribiendo la *PALABRA CLAVE*: \n\n",
             "•Inscripciones 2C 2022 -> *inscripciones*\n",
             "•Finales Agosto 2022 -> *finales*\n",
-            "•Calendario 2022 -> *calendario*\n"
+            "•Calendario 2022 -> *calendario*\n",
+            "Para volver al inicio -> *Inicio\n"
         ],
         "media":null,
         "trigger":null

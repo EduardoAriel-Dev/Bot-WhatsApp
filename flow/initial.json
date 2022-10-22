@@ -88,5 +88,12 @@
             "ypf-calchaqui-lcv"
         ],
         "key": "STEP_3_4"
+    },
+    {
+        "keywords":  [
+            "Inicio",
+            "inicio"
+        ],
+        "key": "STEP_1"
     }
 ]
