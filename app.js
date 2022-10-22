@@ -17,6 +17,7 @@ const { Console } = require('console');
 //Datos
 const { graph } = require('./paths/Dijkstra.js');
 const { aulasSavioPB, aulasSavioP1 } = require ('./paths/aulas.js');
+const { horariosAvanzados } = require('./flow/responseFunctions.js')
 //=====
 
 const app = express();
@@ -40,7 +41,7 @@ const listenMessage = () => client.on('message', async msg => {
         return
     }
     message = body.toLowerCase();
-    console.log('Mensaje Recibido: -> ',message)
+    console.log('(*) Mensaje Recibido: -> ', message)
     const number = cleanNumber(from)
     await readChat(number, message)
 
@@ -120,6 +121,9 @@ const listenMessage = () => client.on('message', async msg => {
     //     }
     // }
 
+    //Llamadas a funciones
+    horariosAvanzados(client, from, aux)
+
     //Si quieres tener un mensaje por defecto
     if (process.env.DEFAULT_MESSAGE === 'true') {
         const response = await responseMessages('DEFAULT')
@@ -132,7 +136,6 @@ const listenMessage = () => client.on('message', async msg => {
         return
     }
 });
-
 
 //*Creación de nuevo Cliente
 client = new Client({
@@ -158,11 +161,11 @@ client.on('auth_failure', (e) => {
 });
 
 client.on('authenticated', () => {
-        console.log('*El usuario fue AUTENTICADO!');
-        console.log("- El chatBOT UNAJ debería ya estar funcionando...") 
+        console.log('\n*El usuario fue AUTENTICADO!*');
+        console.log("[El chatBOT UNAJ debería ya estar funcionando... ]") 
 });
 
-    client.initialize();
+client.initialize();
 
 
 

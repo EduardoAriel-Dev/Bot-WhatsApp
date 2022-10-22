@@ -55,13 +55,6 @@
         "media":null,
         "trigger":null
     },
-    "STEP_2_2_1":{
-        "replyMessage":[
-            "Estos son los horarios para *Ingeniería Informatica*."
-        ],
-        "media": "../mediaSend/Horarios Ing. en Informática 2C 2022.xlsx",
-        "trigger":null
-    },
     "STEP_2_3":{
         "replyMessage":[
             "Estas son las fechas más importantes, accede escribiendo la *PALABRA CLAVE*: \n\n",

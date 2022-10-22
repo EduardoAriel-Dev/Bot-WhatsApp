@@ -1,6 +1,6 @@
 const connectionReady = (cb = () =>{}) => {
     console.log('El bot esta listo para funcionar...')
-    console.log('Prueba su funcionamiento escribiendo "hola"');
+    console.log('Prueba su funcionamiento escribiendo "hola" \n');
     cb()
 }
 
