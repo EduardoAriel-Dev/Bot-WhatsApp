@@ -17,7 +17,7 @@ const { Console } = require('console');
 //Datos
 const { graph } = require('./paths/Dijkstra.js');
 const { aulasSavioPB, aulasSavioP1 } = require ('./paths/aulas.js');
-const { horariosAvanzados } = require('./flow/responseFunctions.js')
+const { horariosAvanzados, horariosIngresantes } = require('./flow/responseFunctions.js')
 //=====
 
 const app = express();
@@ -102,7 +102,6 @@ const listenMessage = () => client.on('message', async msg => {
     }
 
     //ejemplo de flujo de mensaje
-    var aux = message.replace(/\s/g, '')
     
     // if (aux.includes('savio')) {
     //     if (aulasSavioPB.includes(aux)) {
@@ -121,8 +120,17 @@ const listenMessage = () => client.on('message', async msg => {
     //     }
     // }
 
-    //Llamadas a funciones
-    horariosAvanzados(client, from, aux)
+    //*Llamadas a funciones
+    //Quito espacios y acentos
+    var aux = message.replace(/\s/g, '')
+    aux = aux.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+
+    if (aux.includes("avanzado")) {
+        horariosAvanzados(client, from, aux)
+    }
+    if (aux.includes("ingresante")) {
+        horariosIngresantes(cliente, from, aux)
+    }
 
     //Si quieres tener un mensaje por defecto
     if (process.env.DEFAULT_MESSAGE === 'true') {
