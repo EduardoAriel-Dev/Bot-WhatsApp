@@ -131,6 +131,7 @@ const listenMessage = () => client.on('message', async msg => {
     if (aux.includes("ingresante")) {
         horariosIngresantes(client, from, aux)
     }
+    
 
     //Si quieres tener un mensaje por defecto
     if (process.env.DEFAULT_MESSAGE === 'true') {
