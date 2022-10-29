@@ -8,7 +8,7 @@ async function horariosAvanzados(client, from, message) {
     switch (true) {
         //**Ingenieria
         case message.includes("informatica"):
-            msg += `\n${json["ing petroleo-avanzado"]}`; break;
+            msg += `\n${json["ing informatica-avanzado"]}`; break;
         case message.includes("petro"):
             msg += `\n${json["ing petroleo-avanzado"]}`; break;
         case message.includes("bioing"):
