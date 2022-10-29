@@ -1,137 +1,105 @@
 const { sendMedia, sendMessage, lastTrigger, sendMessageButton, readChat } = require('../controllers/send');
+let json = require ('../flow/horarios.json')
+
 
 async function horariosAvanzados(client, from, message) {
+    let msg = `👨‍🎓 Aqui tiene el link con los horarios de avanzados: `
+
     switch (true) {
         //**Ingenieria
         case message.includes("informatica"):
-            await sendMedia(client, from, "../mediaSend/Horarios Ing. en Informática 2C 2022.xlsx")
-            break;
+            msg += `\n${json["ing petroleo-avanzado"]}`; break;
         case message.includes("petro"):
-            //excel de petroleo
-            break;
+            msg += `\n${json["ing petroleo-avanzado"]}`; break;
         case message.includes("bioing"):
-            //excel de bioingenieria
-            break;
+            msg += `\n${json["ing bioingenieria-avanzado"]}`; break;
         case message.includes("electro"):
-            //excel de electromecanica
-            break;
+            msg += `\n${json["ing electromecanica-avanzado"]}`; break;
         case message.includes("industria"):
-            //excel de industrial
-            break;
+            msg += `\n${json["ing industrial-avanzado"]}`; break;
         case message.includes("agraria"):
-            //excel de ciencias agrarias
-            break;
+            msg += `\n${json["ing agraria-avanzado"]}`; break;
         case message.includes("transporte"):
-            //excel de ing transporte
-            break;
+            msg += `\n${json["ing transporte-avanzado"]}`; break;
 
         //**Salud
         case message.includes("medicina"):
-            //excel de medicina
-            break;
+            msg += `\n${json["salud medicina-avanzado"]}`; break;
         case message.includes("bioqui"):
-            //excel de bioquimica
-            break;
+            msg += `\n${json["salud bioquimica-avanzado"]}`; break;        
         case message.includes("enfermeria"):
-            //excel de enfermeria
-            break;
+            msg += `\n${json["salud enfermeria-avanzado"]}`; break;
         case message.includes("kine"):
-            //excel de kinesiologia
-            break;
+            msg += `\n${json["salud kine-avanzado"]}`; break;
         case message.includes("emergencias"):
-            //excel de emergencias y desastres
-            break;
-        case message.includes("farmacia"):
-            //excel de farmacia hospitalaria
-            break;
+            msg += `\n${json["salud emergencias-avanzado"]}`; break;
         case message.includes("gestion de pacientes"):
-            //excel de gestion pacientes
-            break;
+            msg += `\n${json["salud gestion pacientes-avanzado"]}`; break;
 
         //*Administracion
         case message.includes("economia"):
-            //excel de economia
-            break;
+            msg += `\n${json["salud medicina-avanzado"]}`; break;
         case message.includes("trabajo"):
-            //excel de trabajo social
-            break;
+            msg += `\n${json["salud medicina-avanzado"]}`; break;
         case message.includes("administracion"):
-            //excel de administracion
-            break;
+            msg += `\n${json["salud medicina-avanzado"]}`; break;
         case message.includes("ambiental"):
-            //excel de gestion ambiental
-            break;
+            msg += `\n${json["salud medicina-avanzado"]}`; break;
         case message.includes("relaciones"):
-            //excel de relacion y trabajo
-            break;        
+            msg += `\n${json["salud medicina-avanzado"]}`; break;           
     }
+
+    await sendMessage(client, from, msg)
 }
 
 async function horariosIngresantes(client, from, message) {
+    let msg = `👨‍🎓 Aqui tiene el link con los horarios de ingresantes: `
+
     switch (true) {
         //**Ingenieria
         case message.includes("informatica"):
-            //excel de ingresantes informatica
-            break;
+            msg += `\n${json["ing petroleo-ingresantes"]}`; break;
         case message.includes("petro"):
-            //excel de petroleo
-            break;
+            msg += `\n${json["ing petroleo-ingresantes"]}`; break;
         case message.includes("bioing"):
-            //excel de bioingenieria
-            break;
+            msg += `\n${json["ing bioingenieria-ingresantes"]}`; break;
         case message.includes("electro"):
-            //excel de electromecanica
-            break;
+            msg += `\n${json["ing electromecanica-ingresantes"]}`; break;
         case message.includes("industria"):
-            //excel de industrial
-            break;
+            msg += `\n${json["ing industrial-ingresantes"]}`; break;
         case message.includes("agraria"):
-            //excel de ciencias agrarias
-            break;
+            msg += `\n${json["ing agraria-ingresantes"]}`; break;
         case message.includes("transporte"):
-            //excel de ing transporte
-            break;
+            msg += `\n${json["ing transporte-ingresantes"]}`; break;
 
         //**Salud
         case message.includes("medicina"):
-            //excel de medicina
-            break;
+            msg += `\n${json["salud medicina-ingresantes"]}`; break;
         case message.includes("bioqui"):
-            //excel de bioquimica
-            break;
+            msg += `\n${json["salud bioquimica-ingresantes"]}`; break;        
         case message.includes("enfermeria"):
-            //excel de enfermeria
-            break;
+            msg += `\n${json["salud enfermeria-ingresantes"]}`; break;
         case message.includes("kine"):
-            //excel de kinesiologia
-            break;
+            msg += `\n${json["salud kine-ingresantes"]}`; break;
         case message.includes("emergencias"):
-            //excel de emergencias y desastres
-            break;
-        case message.includes("farmacia"):
-            //excel de farmacia hospitalaria
-            break;
+            msg += `\n${json["salud emergencias-ingresantes"]}`; break;
         case message.includes("gestion de pacientes"):
-            //excel de gestion pacientes
-            break;
+            msg += `\n${json["salud gestion pacientes-ingresantes"]}`; break;
 
         //*Administracion
         case message.includes("economia"):
-            //excel de economia
-            break;
+            msg += `\n${json["salud medicina-ingresantes"]}`; break;
         case message.includes("trabajo"):
-            //excel de trabajo social
-            break;
+            msg += `\n${json["salud medicina-ingresantes"]}`; break;
         case message.includes("administracion"):
-            //excel de administracion
-            break;
+            msg += `\n${json["salud medicina-ingresantes"]}`; break;
         case message.includes("ambiental"):
-            //excel de gestion ambiental
-            break;
+            msg += `\n${json["salud medicina-ingresantes"]}`; break;
         case message.includes("relaciones"):
-            //excel de relacion y trabajo
-            break;        
+            msg += `\n${json["salud medicina-ingresantes"]}`; break;           
     }
+
+    await sendMessage(client, from, msg)
 }
 
 module.exports = { horariosAvanzados, horariosIngresantes }

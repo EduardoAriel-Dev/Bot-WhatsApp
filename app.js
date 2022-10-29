@@ -129,7 +129,7 @@ const listenMessage = () => client.on('message', async msg => {
         horariosAvanzados(client, from, aux)
     }
     if (aux.includes("ingresante")) {
-        horariosIngresantes(cliente, from, aux)
+        horariosIngresantes(client, from, aux)
     }
 
     //Si quieres tener un mensaje por defecto
