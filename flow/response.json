@@ -17,12 +17,13 @@
     "STEP_1":{
         "replyMessage":[
             "¡Hola! Este es el chatBot de la UNAJ \n",
-            "Puedes acceder a las diferentes secciones escribiendo la *palabra clave*. \n\n",
+            "Puedes acceder a las diferentes secciones de ayuda escribiendo la *palabra clave*. \n\n",
             "Aulas -> *aula* \n",
             "Próximos Feriados -> *feriados* \n",
             "Horario de Materias -> *materias* \n",
-            "Email de Profesor/Instituto -> *email* \n",
-            "Fecha Inscripción/Finales -> *fechas* \n"       
+            "Fecha Inscripción/Finales -> *fechas* \n",     
+            "Horarios de Materias -> *materias* \n",
+            "Fecha Inscripción a Materias/Finales -> *fechas* \n"
         ],
         "media":null,
         "trigger":null
@@ -30,8 +31,8 @@
     "STEP_2_0":{
         "replyMessage":[
             "Te ayudaré a encontrar un aula. \n",
-            "Escribe el edificio y el número \n",
-            "Ejemplo: *Savio 25*"
+            "Escribe la sede, por donde ingresara y el edificioAula \n",
+            "Ejemplo: *YPF-Calchaqui-Savio25*"
         ],
         "media":null,
         "trigger":null
@@ -43,34 +44,89 @@
             "*10 de Octubre* (Lunes) \n",
             "*21 de Noviembre* (Lunes) \n",
             "*8 de Diciembre* (Jueves) \n",
-            "*9 de Diciembre* (Viernes) \n"
+            "*9 de Diciembre* (Viernes) \n",
+            "Para volver al inicio -> *Inicio\n" 
         ],
         "media":null,
         "trigger":null
     },
     "STEP_2_2":{
         "replyMessage":[
-            "Ingrese el nombre de la materia para buscar información: \n",
-            "Ejemplo: *Practicas Culturales* \n"
+            "Necesito saber si eres ingresante o avanzado, también tu carrera. \n",
+            "Para volver al inicio -> *Inicio\n",
+            "Escribe por ejemplo: *Avanzado Informatica*  \n"
         ],
         "media":null,
         "trigger":null
     },
     "STEP_2_3":{
         "replyMessage":[
-            "Elija una opción ingresando 1 o 2: \n",
-            "1 - Instituto \n",
-            "2 - Profesor "
+            "Estas son las fechas más importantes, accede escribiendo la *PALABRA CLAVE*: \n\n",
+            "•Inscripciones 2C 2022 -> *inscripciones*\n",
+            "•Finales Agosto 2022 -> *finales*\n",
+            "•Calendario 2022 -> *calendario*\n",
+            "Para volver al inicio -> *Inicio\n"
         ],
         "media":null,
         "trigger":null
     },
-    "STEP_2_4":{
+    "STEP_2_3_1":{
         "replyMessage":[
-            "Estas son las fechas más importantes: \n",
-            "*Podemos mostrar una imagen con las fechas* \n"
+            "Estas son las fechas de inscripciones:"
         ],
-        "media":null,
+        "media": "../mediaSend/incripciones2C2022.png",
+        "trigger":null
+    
+    },
+    "STEP_2_3_2":{
+        "replyMessage":[
+            "Te podrás anotar a finales desde el martes 2 al 4 de agosto."
+        ],
+        "media": null,
+        "trigger":null
+    
+    },
+    "STEP_2_3_3":{
+        "replyMessage":[
+            "Aqui tienes el calendario 2022: \n"
+        ],
+        "media": "../mediaSend/Calendario-Academico-2022.jpg",
+        "trigger":null
+    
+    },
+    "STEP_3":{
+        "replyMessage":[
+            "Asi podrás llegar al aula..."
+        ],
+        "media": "https://cdn.discordapp.com/attachments/1013127814372937841/1022940750507430008/Diagrama_sin_titulo_3.drawio.png",
+        "trigger":null
+    },
+    "STEP_3_1":{
+        "replyMessage":[
+            "Asi podrás llegar al aula..."
+        ],
+        "media": "https://cdn.discordapp.com/attachments/1013127814372937841/1022945715040821308/Diagrama_sin_titulo_3.drawio_1.png",
+        "trigger":null
+    },
+    "STEP_3_2":{
+        "replyMessage":[
+            "Asi podrás llegar al aula..."
+        ],
+        "media": "https://cdn.discordapp.com/attachments/1013127814372937841/1022950190027657308/unknown.png",
+        "trigger":null
+    },
+    "STEP_3_3":{
+        "replyMessage":[
+            "Asi podrás llegar al aula..."
+        ],
+        "media": "https://cdn.discordapp.com/attachments/1013127814372937841/1022950190358995005/unknown.png",
+        "trigger":null
+    },
+    "STEP_3_4":{
+        "replyMessage":[
+            "Asi podrás llegar al aula..."
+        ],
+        "media": "https://cdn.discordapp.com/attachments/1013127814372937841/1022950190686158859/unknown.png",
         "trigger":null
     }
 }

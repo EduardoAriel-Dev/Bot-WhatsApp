@@ -17,6 +17,7 @@ const { Console } = require('console');
 //Datos
 const { graph } = require('./paths/Dijkstra.js');
 const { aulasSavioPB, aulasSavioP1 } = require ('./paths/aulas.js');
+const { horariosAvanzados, horariosIngresantes } = require('./flow/responseFunctions.js')
 //=====
 
 const app = express();
@@ -40,7 +41,7 @@ const listenMessage = () => client.on('message', async msg => {
         return
     }
     message = body.toLowerCase();
-    console.log('Mensaje Recibido: -> ',message)
+    console.log('(*) Mensaje Recibido: -> ', message)
     const number = cleanNumber(from)
     await readChat(number, message)
 
@@ -101,23 +102,34 @@ const listenMessage = () => client.on('message', async msg => {
     }
 
     //ejemplo de flujo de mensaje
-    var aux = message.replace(/\s/g, '')
     
-    if (aux.includes('savio')) {
-        if (aulasSavioPB.includes(aux)) {
-            let camino = graph.Dijkstra("Entrada Calchaqui", "Savio PB")
-            console.log(camino)
-            await sendMessage(client, from, camino.toString())
-            //await sendMessage(client, from, "Esa aula en el edificio Savio existe")
-        }
-        // else {
-        //     await sendMessage(client, from, "Esa aula en el edificio Savio NO existe")
-        // }
-        if (aulasSavioP1.includes(aux)) {
-            let camino = graph.Dijkstra("Entrada Calchaqui", "Savio P1")
-            console.log(camino)
-            await sendMessage(client, from, camino.toString())
-        }
+    // if (aux.includes('savio')) {
+    //     if (aulasSavioPB.includes(aux)) {
+    //         let camino = graph.Dijkstra("Entrada Calchaqui", "Savio PB")
+    //         console.log(camino)
+    //         await sendMessage(client, from, camino.toString())
+    //         //await sendMessage(client, from, "Esa aula en el edificio Savio existe")
+    //     }
+    //     // else {
+    //     //     await sendMessage(client, from, "Esa aula en el edificio Savio NO existe")
+    //     // }
+    //     if (aulasSavioP1.includes(aux)) {
+    //         let camino = graph.Dijkstra("Entrada Calchaqui", "Savio P1")
+    //         console.log(camino)
+    //         await sendMessage(client, from, camino.toString())
+    //     }
+    // }
+
+    //*Llamadas a funciones
+    //Quito espacios y acentos
+    var aux = message.replace(/\s/g, '')
+    aux = aux.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+
+    if (aux.includes("avanzado")) {
+        horariosAvanzados(client, from, aux)
+    }
+    if (aux.includes("ingresante")) {
+        horariosIngresantes(client, from, aux)
     }
 
     //Si quieres tener un mensaje por defecto
@@ -132,7 +144,6 @@ const listenMessage = () => client.on('message', async msg => {
         return
     }
 });
-
 
 //*Creación de nuevo Cliente
 client = new Client({
@@ -158,11 +169,11 @@ client.on('auth_failure', (e) => {
 });
 
 client.on('authenticated', () => {
-        console.log('*El usuario fue AUTENTICADO!');
-        console.log("- El chatBOT UNAJ debería ya estar funcionando...") 
+        console.log('\n*El usuario fue AUTENTICADO!*');
+        console.log("[El chatBOT UNAJ debería ya estar funcionando... ]") 
 });
 
-    client.initialize();
+client.initialize();
 
 
 

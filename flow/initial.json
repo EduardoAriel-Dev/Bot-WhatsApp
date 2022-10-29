@@ -25,21 +25,75 @@
     },
     {
         "keywords":  [
-            "materia"
+            "materia",
+            "materias"
         ],
         "key": "STEP_2_2"
-    },
-    {
-        "keywords":  [
-            "email"
-        ],
-        "key": "STEP_2_3"
     },
     {
         "keywords":  [
             "fechas",
             "fecha"
         ],
-        "key": "STEP_2_4"
+        "key": "STEP_2_3"
+    },
+    {
+        "keywords":  [
+            "inscripciones",
+            "Inscripciones",
+            "Inscripciones Materias 2022"
+        ],
+        "key": "STEP_2_3_1"
+    },
+    {
+        "keywords":  [
+            "finales",
+            "Finales"
+        ],
+        "key": "STEP_2_3_2"
+    },
+    {
+        "keywords":  [
+            "Calendario 2022",
+            "calendario"
+        ],
+        "key": "STEP_2_3_3"
+    },
+    {
+        "keywords":  [
+            "ypf-calchaqui-mosconi414"
+        ],
+        "key": "STEP_3"
+    },
+    {
+        "keywords":  [
+            "ypf-calchaqui-savio20"
+        ],
+        "key": "STEP_3_1"
+    },
+    {
+        "keywords":  [
+            "ypf-calchaqui-abrales"
+        ],
+        "key": "STEP_3_2"
+    },
+    {
+        "keywords":  [
+            "ypf-calchaqui-institutoingenieria"
+        ],
+        "key": "STEP_3_3"
+    },
+    {
+        "keywords":  [
+            "ypf-calchaqui-lcv"
+        ],
+        "key": "STEP_3_4"
+    },
+    {
+        "keywords":  [
+            "Inicio",
+            "inicio"
+        ],
+        "key": "STEP_1"
     }
 ]
