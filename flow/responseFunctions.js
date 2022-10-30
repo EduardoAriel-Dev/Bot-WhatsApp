@@ -38,15 +38,15 @@ async function horariosAvanzados(client, from, message) {
 
         //*Administracion
         case message.includes("economia"):
-            msg += `\n${json["salud medicina-avanzado"]}`; break;
+            msg += `\n${json["sociales economia-avanzado"]}`; break;
         case message.includes("trabajo"):
-            msg += `\n${json["salud medicina-avanzado"]}`; break;
+            msg += `\n${json["sociales trabajo-avanzado"]}`; break;
         case message.includes("administracion"):
-            msg += `\n${json["salud medicina-avanzado"]}`; break;
+            msg += `\n${json["sociales administracion-avanzado"]}`; break;
         case message.includes("ambiental"):
-            msg += `\n${json["salud medicina-avanzado"]}`; break;
+            msg += `\n${json["sociales ambiental-avanzado"]}`; break;
         case message.includes("relaciones"):
-            msg += `\n${json["salud medicina-avanzado"]}`; break;           
+            msg += `\n${json["sociales relaciones del trabajo-avanzado"]}`; break;           
     }
 
     await sendMessage(client, from, msg)
@@ -88,15 +88,15 @@ async function horariosIngresantes(client, from, message) {
 
         //*Administracion
         case message.includes("economia"):
-            msg += `\n${json["salud medicina-ingresantes"]}`; break;
+            msg += `\n${json["sociales economia-ingresantes"]}`; break;
         case message.includes("trabajo"):
-            msg += `\n${json["salud medicina-ingresantes"]}`; break;
+            msg += `\n${json["sociales trabajo-ingresantes"]}`; break;
         case message.includes("administracion"):
-            msg += `\n${json["salud medicina-ingresantes"]}`; break;
+            msg += `\n${json["sociales administracion-ingresantes"]}`; break;
         case message.includes("ambiental"):
-            msg += `\n${json["salud medicina-ingresantes"]}`; break;
+            msg += `\n${json["sociales ambiental-ingresantes"]}`; break;
         case message.includes("relaciones"):
-            msg += `\n${json["salud medicina-ingresantes"]}`; break;           
+            msg += `\n${json["sociales relaciones del trabajo-ingresantes"]}`; break;            
     }
 
     await sendMessage(client, from, msg)
