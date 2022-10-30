@@ -6,7 +6,7 @@ const qrcode = require('qrcode-terminal');
 const { Client,LocalAuth  } = require('whatsapp-web.js');
 const mysqlConnection = require('./config/mysql')
 const { middlewareClient } = require('./middleware/client')
-const { generateImage, cleanNumber, checkEnvFile, createClient, isValidNumber } = require('./controllers/handle')
+const { generateImage, cleanNumber, checkEnvFile, createClient, isValidNumber, saveExternalFile } = require('./controllers/handle')
 const { connectionReady, connectionLost } = require('./controllers/connection')
 const { saveMedia } = require('./controllers/save')
 const { getMessages, responseMessages, bothResponse } = require('./controllers/flows')
@@ -131,7 +131,6 @@ const listenMessage = () => client.on('message', async msg => {
     if (aux.includes("ingresante")) {
         horariosIngresantes(client, from, aux)
     }
-    
 
     //Si quieres tener un mensaje por defecto
     if (process.env.DEFAULT_MESSAGE === 'true') {
