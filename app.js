@@ -18,6 +18,7 @@ const { Console } = require('console');
 const { graph } = require('./paths/Dijkstra.js');
 const { aulasSavioPB, aulasSavioP1 } = require ('./paths/aulas.js');
 const { horariosAvanzados, horariosIngresantes } = require('./flow/responseFunctions.js')
+const { salonesUnaj } = require('./flow/responseSalones.js');
 //=====
 
 const app = express();
@@ -130,6 +131,10 @@ const listenMessage = () => client.on('message', async msg => {
     }
     if (aux.includes("ingresante")) {
         horariosIngresantes(client, from, aux)
+    }
+
+    if (aux.includes("ypf")) {
+        salonesUnaj(client, from, message)
     }
 
     //Si quieres tener un mensaje por defecto
