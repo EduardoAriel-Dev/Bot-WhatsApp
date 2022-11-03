@@ -1,3 +1,0 @@
-[1030/232426.559:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
-[1030/232427.404:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
-[1030/232427.413:INFO:CONSOLE(1)] "Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported", source: https://web.whatsapp.com/serviceworker.js (1)
