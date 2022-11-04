@@ -2,8 +2,10 @@ const { sendMedia, sendMessage, lastTrigger, sendMessageButton, readChat } = req
 let json = require ('../flow/salones.json')
 
 //arreglo de los salones
-let salonesMosconi=["1","2","3","4","5","6","7","16","17","52","53","54","55","120","129","130","131","132","134","136","138","139","140","205","206","212","214","305","306","307","308","310","312","314","316","407","408","409","410","412","414","416","418","420"];
+let salonesMosconi= ["1","2","3","4","5","6","7","16","17","52","53","54","55","120","129","130","131","132","134","136","138","139","140","205","206","212","214","305","306","307","308","310","312","314","316","407","408","409","410","412","414","416","418","420"];
 let salonesSavio = ["20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36"]
+let salonPistarini = ["61","62","63","64","65","66","67","68","69","70"] 
+
 
 //Funcion Main.
 async function salonesUnaj(client,from,message){
@@ -31,10 +33,16 @@ async function aulas(client, from, aula,edificio, msg){
                 await sendMessage(client, from,`${json[msg]}`)
             }
             break;
-        case edificio==="savio":
+        case edificio==="savio" || edificio==="m.savio":
             if(salonesSavio.includes(aula)){
                 encotrado=false;
                 await sendMessage(client, from,`${json[msg]}`)
+            }
+            break;
+        case edificio==="pistarini":
+            if(salonPistarini.includes(aula)){
+                encotrado=false;
+                await sendMessage(client,from,`${json[msg]}`)
             }
             break;
         default:
